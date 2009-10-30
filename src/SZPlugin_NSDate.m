@@ -45,10 +45,7 @@
         }
         
         NSTimeInterval seconds = milliseconds;
-        NSLog(@"3ms: %d, s: %f", milliseconds, seconds);
-
         seconds /= 1000;
-        NSLog(@"4ms: %d, s: %f", milliseconds, seconds);
         
         NSDate* date = [NSDate dateWithTimeIntervalSince1970:seconds];
         return [date description];
